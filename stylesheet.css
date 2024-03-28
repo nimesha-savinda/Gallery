@@ -5,7 +5,7 @@
     padding: 5px;
     width: 430px;
     transition: 1s;
-    filter: gayscale(100%)
+    filter: grayscale(100%)
     
 }
 .gallery img:hover{
