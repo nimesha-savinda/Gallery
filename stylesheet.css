@@ -1,5 +1,11 @@
+body{
+    background-color: #92baf8;
+}
 .gallery{
     margin:0px 5px 0px 75px;
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .gallery img{
     padding: 5px;
@@ -8,13 +14,22 @@
     filter: grayscale(100%)
     
 }
-.gallery img:hover{
+.image01 img:hover{
     filter: grayscale(0);
     transform: scale(1.03);
+    cursor: pointer;
 }
 h1{
     text-align: center;
 }
+.image01{
+    display: inline-block;
+    align-items: center;
+}
+.mini-description {
+    text-align: center;
+}
+
 
 .preview-container{
    position: fixed;
@@ -24,7 +39,7 @@ h1{
    left: 50%;
    transform: translate(-50%,-50%);
    /*background-image: url(Images/ocean\ pattern.jpg);*/
-   background-color: rgba(94, 117, 248, 0.885);
+   background-color: rgba(38, 72, 245, 0.88);
    padding: 5px 5px 5px 5px;
    border-radius: 5px;
    opacity: 0;
@@ -74,16 +89,70 @@ img.cross{
 }
 .previous{
     position: absolute;
-    top: 50%;
+    top: 48%;
+    left: 2%;
     display: auto;
+    transition: 1s;
+    cursor: pointer;
 }
 .next{
-    left: 90%;
+    left: 91%;
     position: absolute;
-    top: 50%;
+    top: 48%;
     display: auto;
+    transition: 1s;
+    cursor: pointer;
+}
+.next:hover{
+    transform: scale(1.09);
+}
+.previous:hover{
+    transform: scale(1.09);
 }
 p{
     font-size: 20px;
     margin: 5px 0 5px 0;
+}
+.image_descrptions{
+    font-family: "Baskerville Old Face";
+    display: flex;
+    text-align: justify;
+    background-color: blue;
+
+}
+.description1{
+    display: none;
+    color: white;
+}
+.description2{
+    display: none;
+    color: white;
+}
+.description3{
+    display: none;
+    color: white;
+}
+.description4{
+    display: none;
+    color: white;
+}
+.description5{
+    display: none;
+    color: white;
+}
+.description6{
+    display: none;
+    color: white;
+}
+.description7{
+    display: none;
+    color: white;
+}
+.description8{
+    display: none;
+    color: white;
+}
+.description9{
+    display: none;
+    color: white;
 }
