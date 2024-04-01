@@ -1,15 +1,25 @@
 body{
-    background-color: #92baf8;
+    background-image: url("deep-ocean-background-vector.jpg");
+    background-size: cover;
+    height: 100vh;
+    font-size: 100%;
 }
 .gallery{
-    margin:0px 5px 0px 75px;
-    display: block;
-    justify-content: space-evenly;
-    align-items: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    /*display: block;
+    justify-items: center;
+    align-items: center;*/
+    
 }
 .gallery img{
-    padding: 5px;
-    width: 430px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
     transition: 1s;
     filter: grayscale(100%)
     
@@ -25,16 +35,21 @@ h1{
 .image01{
     display: inline-block;
     align-items: center;
+    /*flex: 1 0 25%;*/
+    margin: 5px;
+    width: 25%;
 }
 .mini-description {
     text-align: center;
+    width: 100%;
 }
 
 
 .preview-container{
    position: fixed;
    max-width: 700px;
-   width:100%;
+   height: 80%;
+   width:80%;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
@@ -87,6 +102,9 @@ img.cross{
 .image{
     position: relative;
 }
+.sliders{
+    width: 100%;
+}
 .previous{
     position: absolute;
     top: 48%;
@@ -94,6 +112,7 @@ img.cross{
     display: auto;
     transition: 1s;
     cursor: pointer;
+    width: 8%;
 }
 .next{
     left: 91%;
@@ -102,6 +121,7 @@ img.cross{
     display: auto;
     transition: 1s;
     cursor: pointer;
+    width: 8%;
 }
 .next:hover{
     transform: scale(1.09);
