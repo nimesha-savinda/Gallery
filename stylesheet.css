@@ -54,7 +54,7 @@ h1{
    left: 50%;
    transform: translate(-50%,-50%);
    /*background-image: url(Images/ocean\ pattern.jpg);*/
-   background-color: rgba(38, 72, 245, 0.88);
+   background-color: rgb(3, 128, 161);
    padding: 5px 5px 5px 5px;
    border-radius: 5px;
    opacity: 0;
@@ -137,7 +137,7 @@ p{
     font-family: "Baskerville Old Face";
     display: flex;
     text-align: justify;
-    background-color: blue;
+    background-color: #0380a1;
 
 }
 .description1{
