@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #0B2447;
+    --secondary-color: #19376D;
+    --third-color: #576CBC;
+    --fourth-color: #A5D7E8;
+    --text-color: #efefef;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    background-color: #080808;
+    cursor: url('../media/curser.png'), auto;
+}
+
+/*
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-image: url('../media/curser.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000 !important;
+}
+
+*/
+
+header {
+    background: #fff;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background-image: url(); */
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 40px;
+    transition: .5s;
+}
+
+
+/* Nav bar */
+
+.nav-container{
+    padding: 8px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 36, 71, 0.8);
+    width: 100vw;
+    position: fixed;
+    border-bottom: 1px solid var(--fourth-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul,
+footer ul{
+    transition: .5s;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+nav ul li,
+footer ul li{
+    text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    transition: .5s;
+}
+
+nav ul li a,
+footer ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    position: relative;
+    border-radius: 30px;
+    padding: 5px;
+    transition: .5s;
+}
+
+header ul li:hover,
+.logo:hover,
+footer ul li:hover{
+    transform: translateY(-4px);
+}
+
+header ul li a:hover,
+footer ul li a:hover,
+footer ul li a:active, 
+header ul li a.active {
+    background: var(--fourth-color);
+    color: var(--primary-color);
+}
+
+.nav-icon{
+    transition: .3s;
+}
+
+nav .nav-icon{
+    display: none;
+}
+
+.nav-icon:hover{
+    color: var(--fourth-color);
+    scale: 1.11;
+}
+
+
+/* Footer */
+footer{
+    height: 60vh;
+    color: #000;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(164, 180, 188, 0.85), rgba(108, 117, 119, 0.4)), url(../media/footer1.jpg) center no-repeat;    
+    background-size: cover;
+    box-shadow:  20px 20px 40px inset rgba(1, 24, 34, 0.9);
+}
+
+footer .footer-content{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-content .information{
+    color: var(--text-color);
+    text-align: center justify;
+    max-height: 50vh;
+    height: auto;
+    margin: 5%;
+    max-width: 50%;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+    background: rgba(12, 19, 69, 0.5);
+    border-radius: 60px;
+    padding: 10px 20px;
+    box-shadow:  15px 15px 30px #353535;
+    transition: .4s;
+}
+
+footer .footer-content .information:hover{
+    scale: 1.01;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 990px){
+
+    .title{
+        font-size: 1.4rem;
+    }
+
+    #typewriter{
+        font-size: 1.1rem;
+    }
+
+    nav .nav-icon, 
+    .nav-icon{
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background: var(--primary-color);
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 3;
+        border: 2px solid var(--third-color);
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav .nav-icon{
+        display: block;
+        color: var(--text-color);
+    }
+
+    nav ul .nav-icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .nav-icon{
+        cursor: pointer;
+    }
+
+    footer .footer-content .information,
+    .mission-content{
+        padding: 15px 10px;
+        margin: 5%;
+        
+    }
+
+    .mission-content p{
+        white-space: wrap;
+        overflow: auto;
+    }
+
+    .mission-content p{
+        white-space: wrap;
+        overflow: auto;
+    }
+
+}
+
+/* end */
